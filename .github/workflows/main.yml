@@ -1,3 +1,6 @@
+name: build java Application 
+on:
+  push:
 jobs:
   builddeployjob:
     runs-on: ubuntu-latest
@@ -23,5 +26,5 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: .
-          tags: sonal04/myimagejava
+          tags: bkahire/myimagejava
           push: true
